@@ -12,6 +12,7 @@ Future<void> main() async {
     serviceAccountContent: serviceAccountContent,
     serviceAccountKeyFilePath: '',
   );
+  FirebaseApp.instance.getAuth();
   runApp(const MyApp());
 }
 
@@ -55,6 +56,9 @@ class _UserManagementScreenState extends State<UserManagementScreen> {
       // Using the instance to create a user with email and password with returns [UserCredential] object
       var userCredential = await firebaseAuth?.createUserWithEmailAndPassword(
           _emailController.text, _passwordController.text);
+      print(_emailController.text);
+      print(_passwordController.text);
+      print(userCredential);
 
       // Checking whethe the credntial are null or not and later updating the same with the rol
       if (userCredential != null) {
