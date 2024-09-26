@@ -7,6 +7,12 @@ Future<void> main() async {
   String serviceAccountContent = await rootBundle.loadString(
       'assets/service_account.json'); //Add your own JSON service account and make sure it is ignored in your version control system
 
+  // Initialize Firebase with the web api key and project id
+  await FirebaseApp.initializeAppWithEnvironmentVariables(
+    apiKey: 'YOUR_WEB_API_KEY',
+    projectId: 'service-account-keys-example',
+  );
+
   // Initialize Firebase with the service account content
   await FirebaseApp.initializeAppWithServiceAccount(
     serviceAccountContent: serviceAccountContent,
