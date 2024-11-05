@@ -1,10 +1,11 @@
-# service_account_keys_example
+# Building Secure Flutter Apps with Firebase: Using Service Account Keys
 
-A new Flutter project.
+A new Flutter project, reflecting how to build secure apps using Firebase Service Account Keys and a surprise package. 
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Read the codelab here to get started: [Building Secure Flutter Apps with Firebase: Using Service Account Keys
+](https://dartcodelabs.com/building-secure-flutter-apps-with-firebase-using-service-account-keys/)
 
 A few resources to get you started if this is your first Flutter project:
 
